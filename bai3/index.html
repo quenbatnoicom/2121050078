@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai3</title>
+</head>
+<body>
+    
+    <MARQUEE>
+     <img src="#" alt="#">
+    </MARQUEE>
+
+    <li>Bai 3</li>
+    <!-- Danh sach -->
+    <!-- Co thu tu ol, li -->
+    <p>Danh sach cong viec vao buoi sang</p>
+    <ol>
+        <li>Thuc day</li>
+        <li>Ve sinh ca nhan</li>
+        <li>An sang</li>
+        <li>Di hoc</li>
+        <li>Giai lao</li>
+    </ol>
+
+    <!-- Khong co ki tu ul, li -->
+    <p>Cac ngon ngu lap trinh</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIP</li>
+        <li>PHP</li>
+        <li>PYTHON</li>
+    </ul>
+
+    <h1>Form</h1>
+    <form>
+
+        <div>
+            <b>Ho va ten</b>
+            <input type="text" name="hoten" placeholder="Nhap ten vao day">
+        </div>
+
+        <div>
+            <b>Nam</b>
+            <input type="text" name="nam" value="2025" readonly>
+        </div>
+
+        <div>
+            <b>Gioi thieu ve ban than</b>
+            <textarea name="gioithieu" placeholder="Gioi thieu ve ban than"></textarea>
+        </div>
+
+        <div>
+            <b>Email</b>
+            <input type="email" name="email" placeholder="Dang @gmail.com">
+        </div>
+
+        <div>
+            <b>So dien thoai</b>
+            <input type="tel" name="sodienthoai" placeholder="Dang 0123456789" required pattern="([0]{1})([039]{1})([0-9]{8})">
+        </div>
+
+        <div>
+            <b>Gioi tinh</b><br>
+            <input type="radio" name="gioitinh" value="nam" checked> Nam <br>
+            <input type="radio" name="gioitinh" value="nu"> Nu <br>
+            <input type="radio" name="gioitinh" value="khongxacdinh"> Khong xac dinh <br>
+        </div>
+
+        <div>
+            <b>So thich</b><br>
+            Game:<input type="checkbox" name="sothich" value="game"> <br>
+            Music:<input type="checkbox" name="sothich" value="music"> <br>
+            Sport:<input type="checkbox" name="sothich" value="sport"> <br>
+        </div>
+
+        <div>
+            <b>Trinh duyet ua thich</b><br>
+            <input list="browser">
+            <datalist id="browser">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+                <option value="Opera">
+                <option value="Brave">
+            </datalist> <br>
+
+            <select id="browser">
+                <option value="Chrome">Chrome</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Safari">Safari</option>
+                <option value="Edge">Edge</option>
+                <option value="Opera">Opera</option>
+                <option value="Brave">Brave</option>
+            </select>
+
+        </div> <br>
+
+        <div>
+            <input type="range" value="20" min="0" max="100" step="1">
+        </div><br>
+
+        <div>
+            <b>Tuoi</b><br>
+            <input type="number" name="tuoi">
+        </div><br>
+
+        <div>
+            <b>Ngay thang nam sinh</b><br>
+            <input type="date" name="Ngaythangnamsinh">
+        </div><br>
+
+        <div>
+            <b>Mau sac yeu thich</b><br>
+            <input type="color" name="mausacyeuthich">
+        </div><br>
+
+        <div>
+            <b>Chon anh dai dien</b><br>
+            <input type="file" name="chonanhdaidien">
+        </div><br>
+
+        <div>
+            <b>Mat khau</b>
+            <input type="password" name="matkhau">
+        </div><br>
+
+        <div>
+            <iframe src="https://gooogle.com"> </iframe>
+        </div><br>
+
+        <div>
+            <input type="reset" name="lammoi">
+        </div><br>
+
+        <div>
+            <input type="submit">
+        </div>
+
+        <video controll>
+            <source src="#" type="#">
+        </video>
+
+        <audio controls>
+            <source src="#" type="#">
+        </audio>
+
+    </form>
+
+
+</body>
+</html>
