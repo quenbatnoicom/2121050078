@@ -1,0 +1,36 @@
+h3 {
+    color: orange;
+    background-color: black;
+}
+#title {
+    color: purple;
+    background-color: pink;
+}
+.bg {
+    background-color: yellow;
+}
+p {
+    color: aqua;
+}
+a {
+    color: red;
+    background-color: green;
+}
+a:hover {
+    cursor: pointer;
+}
+.box1 {
+    background-color: red;
+}
+.box2 {
+    background-color: blue;
+    /* truyền 1 giá trị cách xung quanh */
+    /* truyền 2 giá trị cách trên dưới/ phải trải */
+    /* truyền 4 giá trị cách trên phải dưới trái */
+    /* margin: auto  căn khối ra giữa */
+    width: 50%;
+    margin: auto;
+}
+.box3 {
+    background-color: green;
+}
