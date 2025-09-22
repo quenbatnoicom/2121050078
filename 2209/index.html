@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 7 Javascript</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        //document.writeln("Hello world!" +"<br>");
+        //để nối chuỗi JS dùng dấu +
+        //let hoTen = "Nguyen Manh Trung <br>";
+        //để khai báo biến JS dùng let hoặc var
+        //cú pháp : let tên Biến = giá trị
+        //document.writeln(hoTen);
+        
+        //toán tử
+        //let soThuNhat = 10;
+        //let soThuHai = 5;
+        //let ketQua = true;
+        let thongTinSinhVien = {
+            hoTen: "Nguyen Manh Trung",
+            mssv: "2121050078",
+            tuoi: 22,
+            lop: "DCCTCCT66A2",
+        }
+        let diaChiNhaBanLong = {
+            thanhPho: "Ninh Bình",
+            phuong: "Nam Ninh",
+            duong: "abc",
+            soNha: "123",
+            sinhNam: 2003,
+        }
+        thongTinSinhVien.diaChi = diaChiNhaBanLong;
+        let namNay = 2025;
+
+        //soThuNhat += soThuHai;
+        //ketQua = soThuNhat % soThuHai;
+        //document.writeln(--ketQua);
+        //== trả về kết quả không quan tâm dến kiểu giá trị
+        //== trả về kết quả có quan tâm dến kiểu giá trị
+        //! trả về kết quả phủ định kiểu so sánh
+
+        //document.writeln(soThuNhat !== soThuHai);
+        document.writeln("Xin chào bạn " + thongTinSinhVien.hoTen +" "+ thongTinSinhVien.tuoi + " tuổi" + "địa chỉ ở " + thongTinSinhVien.diaChi);
+        document.writeln(namNay - diaChiNhaBanLong.sinhNam);
+
+    </script>
+</body>
+</html>
