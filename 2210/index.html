@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- <h1>Bài 11</h1>
+    <p>Tạo hàm tính điểm của sinh viên dựa vào 3 điểm A,B,C. Biết điểm tổng = A*0,6 + B*0,3 + C*0,1</p> -->
+    <!-- <script> 
+        // function tinhDiem (A, B, C){
+        //     if (A<0 || A>10 || isNaN(A)){
+        //         document.writeln("Điểm A không hợp lệ");
+        //         return;
+        //     }
+        //     if (B<0 || B>10 || isNaN(B)){
+        //         document.writeln("Điểm B không hợp lệ");
+        //         return;
+        //     }
+        //     if (C<0 || C>10 || isNaN(C)){
+        //         document.writeln("Điểm C không hợp lệ");
+        //         return;
+        //     }
+        //         let tinhDiem = A*0.6 + B*0.3 + C*0.1;
+        //         document.writeln("Điểm trung bình của sinh viên là: " + tinhDiem + "<br>"");
+        // }
+        // let nhapDiemA = prompt ("Nhập điểm A");
+        // let nhapDiemB = prompt ("Nhập điểm B");
+        // let nhapDiemC = prompt ("Nhập điểm C");
+        // let A = parseInt(nhapDiemA);
+        // let B = parseInt(nhapDiemB);
+        // let C = parseInt(nhapDiemC);
+        // tinhDiem (A, B, C);
+        // switch (tinhDiem){
+        //     case 8||9||10:
+        //         document.writeln("Giỏi");
+        //         break;
+        //     case 5||6||7:
+        //         document.writeln("Khá");
+        //         break;
+        //     case 3||4||5:
+        //         document.writeln("TB");
+        //         break;
+        //     default :
+        //         document.writeln("Yếu");
+        // }
+
+        // function tinhDiem(A, B, C){
+        //     let tong;
+        //     if (kiemTraHopLe(A,B,C) == true){
+        //         tong = A*0.6 + B*0.3 + C*0.1;
+        //         document.writeln(tong + "<br>")
+        //     }
+        // function kiemTraHopLe() {
+        //     if(A<0 || A>10 typeof(A) !="number") {
+        //         document.writeln("Điểm A không hợp lệ" + "<br>");
+        //         ketQua = false;
+        //     }
+        //     if(B<0 || B>10 typeof(B) !="number") {
+        //         document.writeln("Điểm B không hợp lệ" + "<br>");
+        //         ketQua = false;
+        //     }
+        //     if(C<0 || C>10 typeof(C) !="number") {
+        //         document.writeln("Điểm C không hợp lệ" + "<br>");
+        //         ketQua = false;
+        //     }
+        //     return ketQua;
+        // }
+        // }
+    </script>-->
+
+        <h2>Hàm tính điểm sinh viên</h2>
+        <div><input type="number" id="diemA" placeholder="Nhập điểm A"><br></div>
+        <div><input type="number" id="diemB" placeholder="Nhập điểm B"><br></div>
+        <div><input type="number" id="diemC" placeholder="Nhập điểm C"><br></div>
+        <div><button onclick="xemKetQua()">Tính điểm</button><br></div>
+        <div><p id="ketQua">Kết quả :</p><br></div>
+        <script>
+            function xemKetQua() {
+                let diemA = parseFloat(document.getElementById("diemA").value);
+                let diemB = parseFloat(document.getElementById("diemB").value);
+                let diemC = parseFloat(document.getElementById("diemC").value);
+            }
+            if (isNaN(diemA) || isNaN(diemB) || isNaN(diemC)) {
+            document.getElementById("ketQua").innerText = "Kết quả: Vui lòng nhập điểm là số.";
+            return;
+            }
+            if (diemA < 0 || diemA > 10 || diemB < 0 || diemB > 10 || diemC < 0 || diemC > 10) {
+            document.getElementById("ketQua").innerText = "Kết quả: Điểm phải nằm trong khoảng từ 0 đến 10.";
+            return;
+            }
+
+            tinhDiem(diemA, diemB, diemC);
+            function tinhDiem(a, b, c) {
+                let diemTB = a * 0.6 + b * 0.3 + c * 0.1;
+                document.getElementById("ketQua").innerText = "Kết quả: " + diemTB;
+            }
+        </script>
+</body>
+</html>
